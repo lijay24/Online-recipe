@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --White: hsl(0, 0%, 100%);
+    --nude: hsl(30, 54%, 90%);
+    --Stone-150: hsl(30, 18%, 87%);
+    --Stone-600: hsl(30, 10%, 34%);
+    --Stone-900: hsl(24, 5%, 18%);
+    --Brown-800: hsl(14, 45%, 36%);
+    --Rose-800: hsl(332, 51%, 32%);
+    --Rose-50: hsl(330, 100%, 98%);
+}
+
+body{
+    background-color: var(--Rose-50) ;
+    color: var(--Brown-800);
+    min-height: 100vh;
+    font-family: "Outfit", sans-serif;
+    line-height: 1.4;
+    display: grid;
+    place-content: center;
+}
+img{
+    max-width: 100%;
+    display: block;
+}
+h1, h3{
+    font-family: "Outfit", sans-serif;
+    font-weight: 400;
+}
+h1{
+    color: var(--Stone-900);
+    font-size: 2rem;
+}
+h2{
+    color: var(--Rose-800) ;
+    margin-bottom: 1rem;
+}
+.steps{
+    margin: 1rem 0;
+}
+.details{
+    margin-top: 1rem;
+}
+ul{
+    padding-left: 1.25rem;
+}
+ul li::marker{
+    color: var(--Brown-800);
+    font-weight: 600;
+}
+ul li{
+    margin-bottom: 1rem;
+}
+ul li span{
+    color: var(--Stone-600);
+    font-weight: bold;
+    margin-left: 1rem;
+}
+hr{
+    margin: 1.5rem;
+    border: 1px solid var(--Stone-600);
+}
+.container{
+    max-width: 60vw;
+    background-color: var(--White);
+    margin: 2rem;
+    border-radius: 1rem;
+}
+
+.container .main_img{
+    padding: 2rem;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.container .main_img img{
+    border-radius: 1rem;
+}
+.content{
+    padding: 0rem 2rem ;
+}
+.info{
+    margin: 1rem 0;
+    color: var(--Stone-600);
+}
+.prep_time{
+    background-color: var(--nude);
+    padding: 1.3rem;
+    border-radius: 10px;
+}
+.prep_time li{
+    margin-bottom: 10px;
+    color: var(--Stone-600);
+}
+.ingredient h3{
+    font-size: 2rem;
+}
+.ingredient li{
+    margin-bottom: .5rem;
+    color: var(--Stone-600);
+    padding: 0rem 1rem;
+}
+
+.instruction h3{ 
+    font-size: 2rem;
+}
+
+.instruction .items_listed{
+    display: flex;
+    padding-left: .5rem;
+    margin-bottom: .5rem;
+}
+.instruction .items_listed .item_1{
+    color: var(--Brown-800);
+    margin-right: 1rem;
+    font-weight: 600;
+    line-height: 2rem;
+}
+
+
+.instruction .items_listed  p{
+    color: var(--Stone-600);
+}
+.instruction .items_listed  p span{
+    font-weight: bold;
+}
+
+
+.nutrition h3{
+    font-size: 2rem;
+}
+.nutrition .details{
+    margin-bottom: 1rem;
+    color: var(--Stone-600);
+}
+
+
+.table .items_listed{
+    padding: .7rem;
+    display: flex;
+    border-bottom: 1px solid var(--Stone-150);
+    justify-content: space-around;
+}
+.table .items_listed:last-child{
+    border: none;
+}
+.table .items_listed .items{
+    color: var(--Stone-600);
+    margin-right: 8rem;
+}
+
+.table .items_listed .amount{
+    font-weight: bold;
+    margin-right: 2rem;
+}
+@media (max-width: 564px){
+    h1{
+        margin-top: 1rem;
+    }
+    body{
+        background-color: var(--White);
+    }
+    .container{
+        margin: 0;
+        
+    }
+    .container .main_img{
+        padding: 0;
+        border-radius: 0;
+        
+    }
+}
